@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifetour</title>
+    <meta name="description" content="Сайт организации походов в горы 'Lifetour'">
+    <link rel="canonical" href="http://localhost:3000/">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="preload" href="./fonts/roboto-condensed/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+  <body class="page__body">
+    <main class="main">
+      <!-- пример использования спрайта -->
+      <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+      <svg>
+        <use href="/__spritemap#sprite-user"></use>
+      </svg> -->
+      <!-- примеры требуемых атрибутов data-test="*" -->
+      <div data-test="header">header</div>
+      <div data-test="hero">hero</div>
+      <div data-test="tours">tours</div>
+      <div data-test="training">training</div>
+      <div data-test="about">about</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="adv">adv</div>
+      <div data-test="gallery">gallery</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer class="footer" data-test="footer">
+
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
