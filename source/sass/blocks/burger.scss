@@ -1,8 +1,8 @@
 
 .burger {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 26px;
+  height: 26px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -14,9 +14,9 @@
   &::before {
     position: absolute;
     content: "";
-    top: 24px;
-    left: 22px;
-    width: 16px;
+    top: 3px;
+    left: 0;
+    width: 26px;
     height: 2px;
     background-color: $white-100;
     transition: all 0.3s ease-in;
@@ -25,9 +25,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 24px;
-    left: 22px;
-    width: 16px;
+    bottom: 3px;
+    left: 0;
+    width: 26px;
     height: 2px;
     background-color: $white-100;
     transition: all 0.3s ease-in;
@@ -59,16 +59,16 @@
 .burger__span {
   position: absolute;
   top: 50%;
-  left: 22px;
+  left: 0;
   transform: translateY(-50%);
-  width: 16px;
+  width: 17px;
   height: 2px;
   background-color: $white-100;
   transition: all 0.3s ease-in;
 }
 
 .burger--active .burger__span {
-  transform: translate(300%, -50%);
+  transform: translate(-100%, -50%);
 }
 
 // Класс для состояния disabled

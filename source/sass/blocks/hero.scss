@@ -1,0 +1,31 @@
+.hero {
+  background-color: $additional-100;
+  color: $white-100;
+}
+
+.hero__wrapper {
+  padding: 40px 15px 56px;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__item {
+  text-align: center;
+}
+
+.hero__item h2 {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 100%;
+  margin: 0 0 15px;
+}
+
+.hero__item p {
+  font-size: 15px;
+  line-height: 133%;
+  margin: 0 0 60px;
+}
