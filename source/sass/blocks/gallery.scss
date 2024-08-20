@@ -1,0 +1,43 @@
+.gallery__wrapper {
+  margin: 0 auto;
+  padding: 36px 0 3px;
+}
+
+.gallery__title {
+  margin: 0 0 27px 15px;
+}
+
+.gallery__wrapper p {
+  margin: 0 15px 31px;
+}
+
+.gallery__list {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.gallery__item {
+  object-fit: cover;
+  height: 266px;
+  min-width: 158px;
+
+  &--two {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+
+.gallery__image {
+  display: block;
+  object-fit: cover;
+  height: 266px;
+
+  &--little {
+    height: 130px;
+  }
+}

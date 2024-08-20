@@ -1,0 +1,42 @@
+.reviews__wrapper {
+  margin: 0 auto;
+  padding: 36px 15px 20px;
+  overflow: hidden;
+}
+
+.reviews__title {
+  margin-bottom: 32px;
+}
+
+.reviews__list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  min-width: 290px;
+  padding: 20px;
+  background-color: $white-100;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+}
+
+.reviews__image {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.reviews__item-name {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 15px 0 8px;
+}
+
+.reviews__item-desc {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+}

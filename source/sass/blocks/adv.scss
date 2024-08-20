@@ -1,0 +1,74 @@
+.adv__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  padding: 36px 15px 20px;
+}
+
+.adv__title {
+  margin-bottom: 37px;
+
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.adv__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adv__item {
+  position: relative;
+  padding: 82px 10px 20px;
+  border: 1px solid $additional-20;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 42px;
+    height: 42px;
+    border: 1px solid $additional-100;
+    background-position: center center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+  }
+}
+
+.adv__item--safety::after {
+  background-image: url("/__spritemap#sprite-icon-shield-view");
+}
+
+.adv__item--info::after {
+  background-image: url("/__spritemap#sprite-icon-crown-view");
+}
+
+.adv__item--equipment::after {
+  background-image: url("/__spritemap#sprite-icon-boot-2-view");
+}
+
+.adv__item--routes::after {
+  background-image: url("/__spritemap#sprite-icon-path-view");
+}
+
+.adv__item--eco::after {
+  background-image: url("/__spritemap#sprite-icon-leaf-view");
+}
+
+.adv__item h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  margin: 0 0 15px;
+}
+
+.adv__item p {
+  margin: 0;
+}

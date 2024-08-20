@@ -1,0 +1,70 @@
+.training__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0 0 25px;
+}
+
+.training__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding: 0 0 0 29px;
+  list-style: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 6px;
+    width: 2px;
+    height: 88%;
+    background-color: $additional-100;
+  }
+}
+
+.training__item {
+  position: relative;
+  width: 200px;
+  padding: 0 0 0 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(-29px, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: $additional-100;
+    border-radius: 50%;
+  }
+
+  &--map::before {
+    background-image: url("/__spritemap#sprite-icon-map-view");
+  }
+
+  &--equipment::before {
+    background-image: url("/__spritemap#sprite-icon-boot-view");
+  }
+
+  &--eco::before {
+    background-image: url("/__spritemap#sprite-icon-trees-view");
+  }
+
+  &--mountains::before {
+    background-image: url("/__spritemap#sprite-icon-mountain-view");
+  }
+}
