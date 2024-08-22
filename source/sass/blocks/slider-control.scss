@@ -1,3 +1,37 @@
+.slider-control {
+  display: flex;
+  gap: 4px;
+}
+
 .slider-control__button {
+  position: relative;
   display: none;
+  width: 37px;
+  height: 35px;
+  background-color: $additional-100;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-icon-arrow-view");
+    background-color: $white-100;
+  }
+
+  &--prev::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  &--disabled {
+    background-color: $disabled;
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

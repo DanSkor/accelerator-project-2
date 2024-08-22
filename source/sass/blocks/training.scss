@@ -3,6 +3,11 @@
   font-size: 16px;
   line-height: 100%;
   margin: 0 0 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    margin: 0 0 104px;
+  }
 }
 
 .training__list {
@@ -22,6 +27,21 @@
     width: 2px;
     height: 88%;
     background-color: $additional-100;
+  }
+
+  @media (min-width: $tablet) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 232px 272px;
+    grid-column: 1/3;
+    gap: 104px;
+    font-size: 14px;
+    line-height: 157%;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -66,5 +86,34 @@
 
   &--mountains::before {
     background-image: url("/__spritemap#sprite-icon-mountain-view");
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+    padding: 0 0 0 35px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.training__item--equipment {
+  @media (min-width: $tablet) {
+    grid-column: 1/2;
+  }
+}
+
+.training__item--eco {
+  @media (min-width: $tablet) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.training__item--mountains {
+  @media (min-width: $tablet) {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }

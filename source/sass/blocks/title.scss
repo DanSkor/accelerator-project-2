@@ -17,4 +17,13 @@
     color: $primary;
     opacity: 0.03;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 25px;
+
+    &::after {
+      font-size: 40px;
+      top: -20px;
+    }
+  }
 }

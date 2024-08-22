@@ -17,7 +17,14 @@
   min-width: 320px;
 
   @media (min-width: $tablet) {
-    // font-size: 16px;
-    // line-height: 150%;
+    background-image:
+      image-set(
+        url("../../img/clouds-tab-1@1x.webp") type("image/webp") 1x,
+        url("../../img/clouds-tab-1@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-tab-1@1x.png") type("image/png") 1x,
+        url("../../img/clouds-tab-1@2x.png") type("image/png") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: right 1020px;
   }
 }

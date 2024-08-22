@@ -8,6 +8,16 @@
     );
   background-repeat: no-repeat;
   background-color: rgb(41, 46, 39);
+
+  @media (min-width: $tablet) {
+    background-image:
+      image-set(
+        url("../../img/form-tab@1x.webp") type("image/webp") 1x,
+        url("../../img/form-tab@2x.webp") type("image/webp") 2x,
+        url("../../img/form-tab@1x.png") type("image/png") 1x,
+        url("../../img/form-tab@2x.png") type("image/png") 2x
+      );
+  }
 }
 
 .form__wrapper {
@@ -15,6 +25,14 @@
   padding: 174px 31px;
   color: $white-100;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 204px;
+    min-height: 680px;
+  }
 }
 
 .form__wrapper h2 {
@@ -22,16 +40,36 @@
   font-size: 22px;
   line-height: 100%;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 25px;
+    margin: 0 0 25px;
+  }
 }
 
 .form__wrapper p {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    margin: 0 0 25px;
+  }
+}
+
+.form__wrapper p br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .form__field {
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @media (min-width: $tablet) {
+    gap: 11px;
+  }
 }
 
 .form__input-wrapper {
@@ -47,6 +85,10 @@
   font-size: 16px;
   line-height: 100%;
   color: rgba(45, 56, 63, 0.5);
+
+  @media (min-width: $tablet) {
+    top: 20px;
+  }
 }
 
 .form__input {
@@ -62,5 +104,9 @@
   &::placeholder {
     color: rgba(2, 102, 193, 0.5);
     opacity: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 18px;
   }
 }

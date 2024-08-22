@@ -9,8 +9,25 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 15px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 0;
+    padding: 20px 45px;
+  }
 }
 
 .header__phone {
   grid-column: 2/3;
+
+  @media (min-width: $tablet) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+.header__link {
+  display: flex;
+  justify-content: center;
 }

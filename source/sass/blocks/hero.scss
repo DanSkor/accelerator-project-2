@@ -5,7 +5,6 @@
 
 .hero__wrapper {
   position: relative;
-  // padding: 40px 15px 56px;
 }
 
 .hero__list {
@@ -25,6 +24,13 @@
   position: relative;
   text-align: center;
   padding: 40px 15px 56px;
+
+  @media (min-width: $tablet) {
+    min-height: 1034px;
+    min-width: 768px;
+    justify-content: flex-start;
+    padding: 342px 15px 80px;
+  }
 }
 
 .hero__item h2 {
@@ -32,12 +38,25 @@
   font-size: 26px;
   line-height: 100%;
   margin: 0 0 15px;
+
+  @media (min-width: $tablet) {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 100%;
+  }
 }
 
 .hero__item p {
   font-size: 15px;
   line-height: 133%;
   margin: 0 0 60px;
+
+  @media (min-width: $tablet) {
+    width: 480px;
+    font-size: 17px;
+    line-height: 141%;
+    margin: 0 auto 35px;
+  }
 }
 
 .hero__image {
@@ -77,5 +96,10 @@
 
   &--current {
     background-color: $white-100;
+  }
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
   }
 }

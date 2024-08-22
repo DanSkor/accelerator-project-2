@@ -1,14 +1,39 @@
 .education__wrapper {
   margin: 0 auto;
   padding: 36px 15px 25px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px 25px;
+  }
 }
 
 .education__title {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
 }
 
 .education__wrapper p {
   font-size: 14px;
   line-height: 143%;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.education__wrapper p br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desctop) {
+    display: none;
+  }
 }

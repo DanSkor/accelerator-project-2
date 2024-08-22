@@ -5,6 +5,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 .contacts__item {
@@ -19,6 +25,15 @@
     width: 22px;
     height: 22px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 34px;
+
+    &::after {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 .contacts__item--tel::after {
@@ -28,6 +43,10 @@
 .contacts__item--email::after {
   background-image: url("/__spritemap#sprite-icon-mail-view");
   height: 16px;
+
+  @media (min-width: $tablet) {
+    height: 18px;
+  }
 }
 
 .contacts__item--address::after {
@@ -39,6 +58,11 @@
   font-size: 14px;
   line-height: 100%;
   margin: 0 0 8px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    margin: 0 0 6px;
+  }
 }
 
 .contacts__link,
@@ -49,4 +73,14 @@
   line-height: 143%;
   color: $primary;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    line-height: 157%;
+  }
+}
+
+.contacts__span br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
