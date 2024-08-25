@@ -31,6 +31,13 @@
     justify-content: flex-start;
     padding: 342px 15px 80px;
   }
+
+  @media (min-width: $desctop) {
+    min-height: 800px;
+    min-width: 1440px;
+    text-align: left;
+    padding: 200px 120px 0;
+  }
 }
 
 .hero__item h2 {
@@ -43,6 +50,11 @@
     font-weight: 800;
     font-size: 56px;
     line-height: 100%;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 77px;
+    margin: 0 0 25px;
   }
 }
 
@@ -57,6 +69,11 @@
     line-height: 141%;
     margin: 0 auto 35px;
   }
+
+  @media (min-width: $desctop) {
+    width: 470px;
+    margin: 0 0 35px;
+  }
 }
 
 .hero__image {
@@ -69,6 +86,10 @@
 .hero__item-content {
   position: relative;
   z-index: 2;
+
+  @media (min-width: $desctop) {
+    width: 780px;
+  }
 }
 
 .hero__pagination-list {
@@ -84,6 +105,13 @@
   padding: 0;
   list-style: none;
   z-index: 2;
+
+  @media (min-width: $desctop) {
+    bottom: 92px;
+    left: auto;
+    right: 120px;
+    transform: translateX(0);
+  }
 }
 
 .hero__pagination-button {
@@ -93,6 +121,7 @@
   background-color: transparent;
   border: 1px solid $white-100;
   transition: all 0.2s ease;
+  cursor: pointer;
 
   &--current {
     background-color: $white-100;
@@ -101,5 +130,11 @@
   @media (min-width: $tablet) {
     width: 20px;
     height: 20px;
+  }
+}
+
+.hero__link {
+  @media (min-width: $desctop) {
+    margin-bottom: 134px;
   }
 }

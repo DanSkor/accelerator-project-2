@@ -1,4 +1,5 @@
 .nav {
+  display: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
@@ -8,7 +9,10 @@
 }
 
 .nav__list {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,4 +21,13 @@
 .nav__link {
   text-decoration: none;
   display: block;
+
+  @media (min-width: $desctop) {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $white-100;
+    text-transform: capitalize;
+  }
 }

@@ -5,6 +5,10 @@
   @media (min-width: $tablet) {
     padding: 60px 45px 25px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 59px 120px 56px;
+  }
 }
 
 .education__title {
@@ -12,6 +16,10 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 36px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 38px;
   }
 }
 
@@ -23,6 +31,10 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 150%;
+  }
+
+  @media (min-width: $desctop) {
+    width: 820px;
   }
 }
 

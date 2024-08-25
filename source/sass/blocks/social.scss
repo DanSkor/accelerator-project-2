@@ -4,6 +4,10 @@
   gap: 16px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desctop) {
+    gap: 15px;
+  }
 }
 
 .social__link {

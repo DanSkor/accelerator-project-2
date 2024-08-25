@@ -11,6 +11,11 @@
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 
 .contacts__item {
@@ -32,6 +37,17 @@
     &::after {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  @media (min-width: $desctop) {
+    padding: 0 0 0 56px;
+
+    &::after {
+      width: 26px;
+      height: 26px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -63,6 +79,11 @@
     font-size: 16px;
     margin: 0 0 6px;
   }
+
+  @media (min-width: $desctop) {
+    font-size: 18px;
+    margin: 0 0 8px;
+  }
 }
 
 .contacts__link,
@@ -76,6 +97,11 @@
 
   @media (min-width: $tablet) {
     line-height: 157%;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 

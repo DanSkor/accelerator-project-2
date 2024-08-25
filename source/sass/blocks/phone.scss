@@ -9,4 +9,8 @@
   @media (min-width: $tablet) {
     font-size: 16px;
   }
+
+  @media (min-width: $desctop) {
+    font-size: 18px;
+  }
 }

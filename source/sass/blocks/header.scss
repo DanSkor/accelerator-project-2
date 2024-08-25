@@ -16,6 +16,11 @@
     row-gap: 0;
     padding: 20px 45px;
   }
+
+  @media (min-width: $desctop) {
+    grid-template-columns: max-content 1fr max-content;
+    padding: 32px 120px;
+  }
 }
 
 .header__phone {
@@ -30,4 +35,10 @@
 .header__link {
   display: flex;
   justify-content: center;
+}
+
+.header__nav {
+  @media (min-width: $desctop) {
+    display: block;
+  }
 }

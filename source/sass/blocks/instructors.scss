@@ -8,6 +8,10 @@
     justify-content: space-between;
     padding: 0 45px 40px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 0 120px 40px;
+  }
 }
 
 .instructors__title {
@@ -29,6 +33,10 @@
     grid-column: 1/3;
     gap: 20px;
   }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 56px;
+  }
 }
 
 .instructors__item {
@@ -46,6 +54,11 @@
     min-width: 212px;
     min-height: 388px;
   }
+
+  @media (min-width: $desctop) {
+    min-width: 285px;
+    min-height: 356px;
+  }
 }
 
 .instructors__item picture {
@@ -59,6 +72,10 @@
     width: 182px;
     height: 200px;
   }
+
+  @media (min-width: $desctop) {
+    width: 255px;
+  }
 }
 
 .instructors__item h3 {
@@ -66,6 +83,10 @@
   font-size: 14px;
   line-height: 114%;
   margin: 0;
+
+  @media (min-width: $desctop) {
+    width: 145px;
+  }
 }
 
 .instructors__link {
@@ -79,16 +100,26 @@
   @media (min-width: $tablet) {
     width: 25px;
   }
+
+  @media (min-width: $desctop) {
+    width: 24px;
+  }
 }
 
 .instructors__item p {
   grid-column: 1/3;
   margin: 0;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 133%;
 }
 
 .instructors__button-wrapper {
   @media (min-width: $tablet) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-bottom: 20px;
   }
 }

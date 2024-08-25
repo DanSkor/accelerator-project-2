@@ -12,4 +12,15 @@
     background-repeat: no-repeat;
     background-position: right 2370px;
   }
+
+  @media (min-width: $desctop) {
+    background-image:
+      image-set(
+        url("../../img/clouds-desc-2@1x.webp") type("image/webp") 1x,
+        url("../../img/clouds-desc-2@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-desc-2@1x.png") type("image/png") 1x,
+        url("../../img/clouds-desc-2@2x.png") type("image/png") 2x
+      );
+    background-position: right 2370px;
+  }
 }

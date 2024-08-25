@@ -11,6 +11,10 @@
     min-width: 330px;
     min-height: 416px;
   }
+
+  @media (min-width: $desctop) {
+    min-width: 380px;
+  }
 }
 
 .tours-card__image {
@@ -99,6 +103,10 @@
   font-size: 24px;
   line-height: 117%;
   margin: 0;
+
+  @media (min-width: $desctop) {
+    width: 240px;
+  }
 }
 
 .tours-card__extra-list {

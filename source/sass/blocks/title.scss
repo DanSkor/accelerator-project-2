@@ -26,4 +26,15 @@
       top: -20px;
     }
   }
+
+  @media (min-width: $desctop) {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 100%;
+
+    &::after {
+      font-size: 55px;
+      top: -19px;
+    }
+  }
 }
