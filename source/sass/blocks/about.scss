@@ -33,7 +33,7 @@
 
 .about__wrapper {
   margin: 0 auto;
-  padding: 420px 15px 20px;
+  padding: 436px 15px 20px;
 
   @media (min-width: $tablet) {
     padding: 60px 48px 15px 450px;
@@ -98,10 +98,14 @@
   }
 }
 
+.about__wrapper p:first-of-type {
+  margin: 0 0 25px;
+}
+
 .about__wrapper p {
   font-size: 14px;
   line-height: 143%;
-  margin: 0 0 25px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;

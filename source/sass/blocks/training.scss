@@ -2,7 +2,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
-  margin: 0 0 25px;
+  margin: 0 0 24px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -70,15 +70,14 @@
 
 .training__item {
   position: relative;
-  width: 200px;
+  width: 235px;
   padding: 0 0 0 34px;
 
   &::before {
     position: absolute;
     content: "";
-    top: 50%;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
     width: 25px;
     height: 25px;
   }
@@ -132,9 +131,7 @@
     }
 
     &::before {
-      top: 0;
       left: 0;
-      transform: translate(0);
     }
   }
 }

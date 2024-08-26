@@ -44,13 +44,13 @@
 
 .burger--active.burger {
   &::before {
-    top: 29px;
+    top: 12px;
     transform: rotate(45deg);
     margin-left: 3px;
   }
 
   &::after {
-    bottom: 29px;
+    bottom: 12px;
     transform: rotate(-45deg);
     margin-left: 3px;
   }

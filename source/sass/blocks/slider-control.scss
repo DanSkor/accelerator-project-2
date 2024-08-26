@@ -10,6 +10,7 @@
   height: 35px;
   background-color: $additional-100;
   border: none;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -29,6 +30,7 @@
 
   &--disabled {
     background-color: $disabled;
+    cursor: default;
   }
 
   @media (min-width: $tablet) {

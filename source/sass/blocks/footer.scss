@@ -100,7 +100,7 @@
 }
 
 .footer__link {
-  text-align: center;
+  justify-content: center;
   margin-bottom: 23px;
 
   @media (min-width: $tablet) {
@@ -120,10 +120,11 @@
 
 .footer__nav-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: 120px 120px;
+  gap: 15px 51px;
   text-align: center;
   justify-content: space-between;
+  margin-left: -6px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -156,6 +157,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  letter-spacing: -0.1px;
 
   @media (min-width: $desctop) {
     font-size: 16px;

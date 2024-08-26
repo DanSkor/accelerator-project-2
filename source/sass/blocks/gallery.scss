@@ -1,6 +1,6 @@
 .gallery__wrapper {
   margin: 0 auto;
-  padding: 36px 0 3px;
+  padding: 35px 0 3px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -97,7 +97,11 @@
   height: 266px;
 
   &--little {
-    height: 130px;
+    height: 134px;
+  }
+
+  &--little-bottom {
+    height: 125px;
   }
 
   @media (min-width: $tablet) {

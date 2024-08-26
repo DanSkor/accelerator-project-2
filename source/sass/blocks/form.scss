@@ -32,7 +32,7 @@
 
 .form__wrapper {
   margin: 0 auto;
-  padding: 174px 31px;
+  padding: 176px 31px 173px;
   color: $white-100;
   text-align: center;
 
@@ -54,7 +54,7 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet) {
     font-size: 25px;
@@ -149,6 +149,8 @@
 }
 
 .form__button {
+  padding: 22px 34px;
+
   @media (min-width: $tablet) {
     min-width: 180px;
   }

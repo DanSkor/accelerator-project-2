@@ -4,6 +4,7 @@
 }
 
 .page__body {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: $montserrat;
@@ -15,6 +16,17 @@
   margin: 0 auto;
   min-height: 100vh;
   min-width: 320px;
+
+  &--menu::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 56, 63, 0.6);
+    z-index: 4;
+  }
 
   @media (min-width: $tablet) {
     background-image:

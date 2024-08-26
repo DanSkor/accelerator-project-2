@@ -20,7 +20,7 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 36px 15px 20px;
+  padding: 38px 15px 20px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -38,7 +38,7 @@
 }
 
 .tours__title {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
     margin-bottom: 10px;
@@ -86,7 +86,7 @@
     width: 9px;
     height: 14px;
     top: 50%;
-    right: 10px;
+    right: 8px;
     transform: translateY(-50%);
     mask-image: url("/__spritemap#sprite-icon-arrow-2-view");
     background-color: $primary;

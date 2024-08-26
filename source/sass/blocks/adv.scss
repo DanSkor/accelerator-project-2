@@ -46,7 +46,7 @@
 .adv__list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -66,14 +66,14 @@
 
 .adv__item {
   position: relative;
-  padding: 82px 10px 20px;
+  padding: 81px 10px 20px;
   border: 1px solid $additional-20;
   background-color: $white-100;
 
   &::after {
     position: absolute;
     content: "";
-    top: 20px;
+    top: 19px;
     left: 50%;
     transform: translateX(-50%);
     width: 42px;
@@ -142,6 +142,15 @@
 
   @media (min-width: $desctop) {
     font-size: 18px;
+  }
+}
+
+.adv__item--eco h3 {
+  width: 246px;
+  margin: 0 auto 15px;
+
+  @media (min-width: $tablet) {
+    width: auto;
   }
 }
 

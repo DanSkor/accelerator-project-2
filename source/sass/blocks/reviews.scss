@@ -1,13 +1,15 @@
 .reviews {
-  background-image:
-    image-set(
-      url("../../img/clouds-desc-3@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds-desc-3@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds-desc-3@1x.png") type("image/png") 1x,
-      url("../../img/clouds-desc-3@2x.png") type("image/png") 2x
-    );
-  background-position: top 325px center;
-  background-repeat: no-repeat;
+  @media (min-width: $desctop) {
+    background-image:
+      image-set(
+        url("../../img/clouds-desc-3@1x.webp") type("image/webp") 1x,
+        url("../../img/clouds-desc-3@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-desc-3@1x.png") type("image/png") 1x,
+        url("../../img/clouds-desc-3@2x.png") type("image/png") 2x
+      );
+    background-position: top 325px center;
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__wrapper {
@@ -57,7 +59,7 @@
 
 .reviews__item {
   min-width: 290px;
-  padding: 20px;
+  padding: 20px 20px 15px;
   background-color: $white-100;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
@@ -76,11 +78,11 @@
 
 .reviews__image {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .reviews__item-content p {
-  margin: 0 0 25px;
+  margin: 0 0 16px;
 
   @media (min-width: $desctop) {
     margin: 0 0 2px;
@@ -88,14 +90,14 @@
 }
 
 .reviews__item-content p:first-child {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .reviews__item-name {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
-  margin: 15px 0 8px;
+  margin: 0 0 5px;
 
 
   @media (min-width: $tablet) {
