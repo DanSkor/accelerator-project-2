@@ -17,7 +17,7 @@
         url("../../img/about-tab@1x.png") type("image/png") 1x,
         url("../../img/about-tab@2x.png") type("image/png") 2x
       );
-    background-position: center left;
+    background-position: left 175px;
   }
 
   @media (min-width: $desctop) {
@@ -28,6 +28,7 @@
         url("../../img/about-desc@1x.png") type("image/png") 1x,
         url("../../img/about-desc@2x.png") type("image/png") 2x
       );
+    background-position: left 103px;
   }
 }
 
@@ -36,11 +37,11 @@
   padding: 436px 15px 20px;
 
   @media (min-width: $tablet) {
-    padding: 60px 48px 15px 450px;
+    padding: 61px 48px 40px 450px;
   }
 
   @media (min-width: $desctop) {
-    padding: 145px 120px 100px 660px;
+    padding: 148px 120px 178px 660px;
   }
 }
 
@@ -65,7 +66,7 @@
 
   @media (min-width: $tablet) {
     font-size: 25px;
-    margin: 0 0 46px;
+    margin: 0 0 47px;
 
     &::after {
       font-size: 40px;
@@ -74,10 +75,11 @@
 
   @media (min-width: $desctop) {
     font-size: 35px;
-    margin: 0 0 57px;
+    margin: 0 0 59px;
 
     &::after {
       font-size: 55px;
+      top: -39px;
     }
   }
 }
@@ -90,16 +92,21 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    margin: 0 0 11px;
   }
 
   @media (min-width: $desctop) {
     font-size: 21px;
-    margin: 0 0 20px;
+    margin: 0 0 16px;
   }
 }
 
 .about__wrapper p:first-of-type {
   margin: 0 0 25px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 29px;
+  }
 }
 
 .about__wrapper p {
@@ -116,5 +123,13 @@
     width: 585px;
     font-size: 14px;
     line-height: 157%;
+  }
+}
+
+.about__wrapper p br {
+  display: none;
+
+  @media (min-width: $desctop) {
+    display: block;
   }
 }

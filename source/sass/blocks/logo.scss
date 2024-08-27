@@ -1,4 +1,8 @@
 .logo {
   display: flex;
   justify-content: right;
+
+  @media (min-width: $tablet) {
+    justify-content: center;
+  }
 }

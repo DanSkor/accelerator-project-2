@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
-    margin: 0 0 104px;
+    margin: 0 0 101px;
   }
 
   @media (min-width: $desctop) {
     font-size: 21px;
-    margin: 0 0 23px;
+    margin: 0 0 27px;
   }
 }
 
@@ -53,17 +53,18 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 10px;
+    gap: 0;
     font-size: 16px;
     line-height: 150%;
+    margin-left: 10px;
 
     &::after {
       display: block;
-      width: 100%;
+      width: 99%;
       height: 2px;
       top: auto;
-      bottom: -6px;
-      left: 9px;
+      bottom: -11px;
+      left: 12px;
     }
   }
 }
@@ -111,8 +112,12 @@
   }
 
   @media (min-width: $tablet) {
-    width: auto;
+    width: 260px;
     padding: 0 0 0 35px;
+
+    &::before {
+      top: 1px;
+    }
 
     &::after {
       display: none;
@@ -125,13 +130,14 @@
 
     &::after {
       display: block;
-      left: 37px;
+      left: 39px;
       top: auto;
-      bottom: -19px;
+      bottom: -24px;
     }
 
     &::before {
       left: 0;
+      top: 3px;
     }
   }
 }
@@ -149,9 +155,31 @@
   }
 }
 
+.training__item--eco br {
+  display: none;
+
+  @media (min-width: $desctop) {
+    display: block;
+  }
+}
+
+.training__item--eco::after {
+  @media (min-width: $desctop) {
+    left: 20px;
+  }
+}
+
 .training__item--mountains {
   @media (min-width: $tablet) {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+}
+
+.training__item--mountains br {
+  display: none;
+
+  @media (min-width: $desctop) {
+    display: block;
   }
 }

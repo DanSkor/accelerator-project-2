@@ -22,10 +22,13 @@
   text-decoration: none;
   display: block;
 
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
   @media (min-width: $desctop) {
     font-family: $montserrat;
     font-weight: 400;
-    font-size: 16px;
     line-height: 100%;
     color: $white-100;
     text-transform: capitalize;

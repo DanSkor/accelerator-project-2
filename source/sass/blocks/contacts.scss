@@ -12,7 +12,7 @@
     gap: 40px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desctop) {
     flex-direction: column;
     gap: 35px;
   }

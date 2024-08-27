@@ -58,7 +58,7 @@
 
   @media (min-width: $tablet) {
     font-size: 25px;
-    margin: 0 0 25px;
+    margin: 2px 0 24px;
   }
 
   @media (min-width: $desctop) {
@@ -75,7 +75,7 @@
 
   @media (min-width: $tablet) {
     font-size: 16px;
-    margin: 0 0 25px;
+    margin: 0 2px 24px 0;
   }
 
   @media (min-width: $desctop) {
@@ -121,6 +121,7 @@
 
   @media (min-width: $tablet) {
     top: 20px;
+    left: 30px;
   }
 }
 
@@ -153,5 +154,6 @@
 
   @media (min-width: $tablet) {
     min-width: 180px;
+    padding: 21px 34px 19px;
   }
 }

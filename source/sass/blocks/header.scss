@@ -32,12 +32,20 @@
     grid-column: 3/4;
     grid-row: 1/2;
   }
+
+  @media (min-width: $desctop) {
+    margin-top: 3px;
+  }
 }
 
 .header__link {
   display: flex;
   justify-content: center;
   z-index: 6;
+
+  @media (min-width: $desctop) {
+    padding: 10px 35px 10px 32px;
+  }
 }
 
 .header__nav {
@@ -53,7 +61,9 @@
   transition: all 0.3s ease;
 
   @media (min-width: $desctop) {
-    display: block;
+    position: relative;
+    transform: translateX(0);
+    padding: 0;
   }
 
   &--open {
@@ -68,11 +78,29 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $white-100;
+
+  @media (min-width: $desctop) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: none;
+    letter-spacing: 0.6px;
+  }
 }
 
 .header__nav .nav__list {
   flex-direction: column;
   gap: 22px;
+
+  @media (min-width: $tablet) {
+    gap: 26px;
+  }
+
+  @media (min-width: $desctop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 27px;
+  }
 }
 
 .header__button {

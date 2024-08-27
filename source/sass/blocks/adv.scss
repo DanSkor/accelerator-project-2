@@ -8,7 +8,7 @@
         url("../../img/clouds-tab-3@2x.png") type("image/png") 2x
       );
     background-repeat: no-repeat;
-    background-position: center bottom 103px;
+    background-position: center bottom 102px;
   }
 
   @media (min-width: $desctop) {
@@ -38,8 +38,16 @@
     transform: translateX(-50%);
   }
 
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
   @media (min-width: $desctop) {
     margin-bottom: 50px;
+
+    &::after {
+      top: -29px;
+    }
   }
 }
 
@@ -50,12 +58,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 29px 30px;
   }
 
   @media (min-width: $desctop) {
@@ -87,10 +96,10 @@
   @media (min-width: $tablet) {
     width: 324px;
     min-height: 340px;
-    padding: 103px 20px 30px;
+    padding: 103px 20px 29px;
 
     &::after {
-      top: 30px;
+      top: 29px;
       width: 48px;
       height: 48px;
     }
@@ -100,13 +109,21 @@
     width: auto;
     min-width: 380px;
     min-height: 329px;
-    padding: 124px 20px 40px;
+    padding: 123px 20px 39px;
 
     &::after {
       top: 40px;
       width: 54px;
       height: 54px;
     }
+  }
+}
+
+.adv__item--equipment p br {
+  display: block;
+
+  @media (min-width: $desctop) {
+    display: none;
   }
 }
 
