@@ -10,7 +10,9 @@
   height: 35px;
   background-color: $additional-100;
   border: none;
+  outline: 1px solid $additional-100;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   &::after {
     position: absolute;
@@ -28,9 +30,46 @@
     transform: translate(-50%, -50%) rotate(180deg);
   }
 
-  &--disabled {
+  &:hover {
+    background-color: $white-100;
+    outline: 1px solid $active;
+  }
+
+  &:hover::after {
+    background-color: $active;
+  }
+
+  &:focus {
+    background-color: $white-100;
+    outline: 1px solid $white-100;
+  }
+
+  &:focus::after {
+    background-color: $active;
+  }
+
+  &:active {
+    background-color: $active;
+    outline: 1px solid $active;
+  }
+
+  &:active::after {
+    background-color: $white-100;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
     background-color: $disabled;
     cursor: default;
+    outline: 1px solid $disabled;
+  }
+
+  &--disabled:hover::after,
+  &--disabled:focus::after,
+  &--disabled:active::after {
+    background-color: $white-100;
   }
 
   @media (min-width: $tablet) {

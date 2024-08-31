@@ -1,10 +1,13 @@
 .footer {
+  margin: 0 auto;
+
   @media (min-width: $desctop) {
     display: grid;
     align-items: center;
     grid-template-columns: 500px 600px;
     gap: 95px 100px;
     padding: 100px 120px 32px;
+    max-width: 1440px;
   }
 }
 
@@ -16,6 +19,7 @@
   }
 
   @media (min-width: $desctop) {
+    margin-top: 23px;
     padding: 0;
   }
 }
@@ -28,7 +32,7 @@
   }
 
   @media (min-width: $desctop) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -108,6 +112,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desctop) {
+    padding: 9px 33px 9px 29px;
+  }
 }
 
 .footer__nav {
@@ -135,7 +143,7 @@
   }
 
   @media (min-width: $desctop) {
-    gap: 30px;
+    gap: 31px;
   }
 }
 
@@ -172,6 +180,29 @@
   letter-spacing: -0.1px;
   text-transform: none;
 
+  &:hover {
+    border-bottom: 1px solid $primary;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    color: $additional-100;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    color: $disabled;
+    cursor: default;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
   @media (min-width: $desctop) {
     font-size: 16px;
   }
@@ -179,6 +210,15 @@
 
 .footer__tel {
   display: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $additional-20;
+  }
+
+  &:focus {
+    color: $additional-100;
+  }
 
   @media (min-width: $desctop) {
     display: block;
@@ -186,6 +226,7 @@
     font-size: 18px;
     line-height: 100%;
     color: $primary;
+    padding-left: 55px;
   }
 }
 
@@ -210,4 +251,17 @@
   text-align: center;
   color: $primary;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &--disabled {
+    opacity: 0.2;
+    outline: none;
+  }
 }

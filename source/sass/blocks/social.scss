@@ -6,7 +6,7 @@
   list-style: none;
 
   @media (min-width: $desctop) {
-    gap: 15px;
+    gap: 14px;
   }
 }
 
@@ -17,4 +17,47 @@
   width: 33px;
   height: 30px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $additional-20;
+    border: 1px solid $primary;
+  }
+
+  &:focus {
+    color: $additional-100;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:active {
+    background-color: $additional-100;
+    outline: none;
+    border: 1px solid $additional-100;
+  }
+
+  &:active svg path {
+    fill: $white-100;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    border: 1px solid $primary;
+    background-color: $white-100;
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &--disabled svg path,
+  &--disabled:hover svg path,
+  &--disabled:focus svg path,
+  &--disabled:active svg path {
+    fill: $primary;
+  }
+
+  @media (min-width: $desctop) {
+    width: 31px;
+  }
 }

@@ -1,6 +1,15 @@
 .logo {
   display: flex;
   justify-content: right;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @media (min-width: $tablet) {
     justify-content: center;

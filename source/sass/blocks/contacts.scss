@@ -64,6 +64,10 @@
   @media (min-width: $tablet) {
     height: 18px;
   }
+
+  @media (min-width: $desctop) {
+    top: 50%;
+  }
 }
 
 .contacts__item--address::after {
@@ -84,6 +88,33 @@
   @media (min-width: $desctop) {
     font-size: 18px;
     margin: 0 0 8px;
+  }
+}
+
+.contacts__link {
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    color: $additional-100;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+    opacity: 1;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:active,
+  &--disabled:focus {
+    outline: none;
+    color: $disabled;
+    cursor: default;
   }
 }
 

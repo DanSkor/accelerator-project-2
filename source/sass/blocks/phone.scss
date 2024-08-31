@@ -5,6 +5,29 @@
   line-height: 100%;
   color: $white-100;
   text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $white-50;
+  }
+
+  &:focus {
+    color: $primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:active,
+  &--disabled:focus {
+    outline: none;
+    color: $disabled;
+    cursor: default;
+  }
 
   @media (min-width: $tablet) {
     font-size: 16px;

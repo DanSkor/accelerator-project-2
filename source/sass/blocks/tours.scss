@@ -21,6 +21,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 38px 15px 20px;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -34,6 +35,7 @@
     grid-template-columns: 800px 78px;
     padding: 123px 120px 89px;
     gap: 40px;
+    max-width: 1440px;
   }
 }
 
@@ -46,20 +48,20 @@
 }
 
 .tours__list {
+  width: 290px;
   display: flex;
   margin: 0 0 25px;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 
   @media (min-width: $tablet) {
+    width: 678px;
     grid-column: 1/3;
-    gap: 18px;
     margin: 0;
   }
 
   @media (min-width: $desctop) {
-    gap: 30px;
+    width: 1200px;
   }
 }
 
@@ -79,6 +81,7 @@
   width: max-content;
   margin: 0 auto;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   &::after {
     position: absolute;
@@ -90,6 +93,48 @@
     transform: translateY(-50%);
     mask-image: url("/__spritemap#sprite-icon-arrow-2-view");
     background-color: $primary;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    color: $additional-20;
+  }
+
+  &:hover::after {
+    background-color: $additional-20;
+  }
+
+  &:focus {
+    color: $additional-100;
+    outline: none;
+  }
+
+  &:focus::after {
+    background-color: $additional-100;
+  }
+
+  &:active {
+    color: $active;
+    outline: none;
+  }
+
+  &:active::after {
+    background-color: $active;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    color: $disabled;
+    cursor: default;
+  }
+
+  &--disabled::after,
+  &--disabled:hover::after,
+  &--disabled:focus::after,
+  &--disabled:active::after {
+    background-color: $disabled;
   }
 
   @media (min-width: $tablet) {

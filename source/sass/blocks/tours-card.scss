@@ -1,19 +1,19 @@
 .tours-card {
   display: flex;
   position: relative;
-  min-width: 290px;
+  width: 290px;
   min-height: 416px;
   color: $white-100;
   background-color: rgb(71, 78, 50);
   padding: 30px 20px;
 
   @media (min-width: $tablet) {
-    min-width: 330px;
+    width: 330px;
     min-height: 416px;
   }
 
   @media (min-width: $desctop) {
-    min-width: 380px;
+    width: 380px;
   }
 }
 
@@ -67,8 +67,8 @@
 
   @media (min-width: $tablet) {
     &::after {
-      width: 14px;
-      height: 13px;
+      width: 11px;
+      height: 15px;
       left: 14px;
     }
   }

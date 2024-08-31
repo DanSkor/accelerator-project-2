@@ -5,6 +5,11 @@
 
 .hero__wrapper {
   position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $desctop) {
+    max-width: 1440px;
+  }
 }
 
 .hero__list {
@@ -12,7 +17,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 .hero__item {
@@ -29,14 +33,54 @@
     min-height: 1034px;
     min-width: 768px;
     justify-content: flex-start;
-    padding: 342px 15px 80px;
+    padding: 342px 45px 100px;
+
+    &--kamchatka {
+      padding: 137px 45px 100px;
+    }
+
+    &--kamchatka::after {
+      position: absolute;
+      content: "";
+      bottom: 197px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 442px;
+      height: 365px;
+      background-image:
+        image-set(
+          url("../../img/hero-cards-tab@1x.webp") type("image/webp") 1x,
+          url("../../img/hero-cards-tab@2x.webp") type("image/webp") 2x,
+          url("../../img/hero-cards-tab@1x.png") type("image/png") 1x,
+          url("../../img/hero-cards-tab@2x.png") type("image/png") 2x
+        );
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 10;
+    }
   }
 
   @media (min-width: $desctop) {
+    &--kamchatka::after {
+      bottom: 154px;
+      left: auto;
+      right: 120px;
+      transform: translateX(0);
+      width: 410px;
+      height: 459px;
+      background-image:
+        image-set(
+          url("../../img/hero-cards-desc@1x.webp") type("image/webp") 1x,
+          url("../../img/hero-cards-desc@2x.webp") type("image/webp") 2x,
+          url("../../img/hero-cards-desc@1x.png") type("image/png") 1x,
+          url("../../img/hero-cards-desc@2x.png") type("image/png") 2x
+        );
+    }
+
     min-height: 800px;
     min-width: 1440px;
     text-align: left;
-    padding: 200px 120px 0;
+    padding: 200px 120px 80px;
   }
 }
 
@@ -88,7 +132,7 @@
   z-index: 2;
 
   @media (min-width: $desctop) {
-    width: 780px;
+    width: 925px;
   }
 }
 
@@ -123,8 +167,32 @@
   transition: all 0.2s ease;
   cursor: pointer;
 
-  &--current {
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus {
+    background-color: transparent;
+    outline: 1px solid $white-50;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $white-50;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &--current,
+  &--current:hover,
+  &--current:focus,
+  &--current:active {
     background-color: $white-100;
+    outline: none;
+    border: 1px solid $white-100;
   }
 
   @media (min-width: $tablet) {

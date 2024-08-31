@@ -8,6 +8,8 @@
     );
   background-repeat: no-repeat;
   background-color: rgb(41, 46, 39);
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet) {
     background-image:
@@ -47,6 +49,7 @@
   @media (min-width: $desctop) {
     padding: 100px 240px;
     min-height: 760px;
+    max-width: 1440px;
   }
 }
 
@@ -63,7 +66,7 @@
 
   @media (min-width: $desctop) {
     font-size: 35px;
-    margin: 0 0 20px;
+    margin: 4px 0 17px;
   }
 }
 
@@ -79,7 +82,7 @@
   }
 
   @media (min-width: $desctop) {
-    margin: 0 0 40px;
+    margin: 0 0 38px;
   }
 }
 
@@ -132,12 +135,43 @@
   line-height: 100%;
   color: rgba(45, 56, 63, 0.5);
   background-color: $white-100;
+  outline: 1px solid $additional-20;
   border: none;
   padding: 15px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    outline: 1px solid $additional-100;
+  }
+
+  &:focus {
+    outline: 1px solid $primary;
+  }
+
+  &:focus + .form__label {
+    color: transparent;
+  }
+
+  &:disabled {
+    outline: 1px solid $disabled;
+  }
+
+  &:disabled + .form__label {
+    color: rgba(153, 153, 153, 0.5);
+  }
 
   &::placeholder {
     color: rgba(2, 102, 193, 0.5);
     opacity: 0;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+  }
+
+  &--error {
+    outline: 1px solid $error;
+    color: rgba(45, 56, 63, 0.5);
   }
 
   @media (min-width: $tablet) {
@@ -147,6 +181,15 @@
   @media (min-width: $tablet) {
     min-width: 360px;
   }
+}
+
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form__input[type="number"] {
+  appearance: textfield;
 }
 
 .form__button {

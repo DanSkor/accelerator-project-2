@@ -10,5 +10,36 @@
   padding: 20px 34px;
   text-decoration: none;
   cursor: pointer;
+  outline: 1px solid $additional-100;
   border: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $white-100;
+    outline: 1px solid $active;
+    color: $active;
+  }
+
+  &:focus {
+    background-color: $white-100;
+    outline: 1px solid $white-100;
+    color: $active;
+  }
+
+  &:active {
+    background-color: $active;
+    outline: 1px solid $active;
+    color: $white-100;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:active,
+  &--disabled:focus,
+  &:disabled {
+    background-color: $disabled;
+    outline: 1px solid $disabled;
+    color: $white-100;
+    cursor: default;
+  }
 }

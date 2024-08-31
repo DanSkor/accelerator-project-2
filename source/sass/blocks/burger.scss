@@ -11,6 +11,20 @@
   padding: 0;
   transition: all 0.2s ease;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &--disabled {
+    opacity: 0.2;
+    cursor: default;
+    outline: none;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -35,10 +49,6 @@
 
   @media (min-width: $desctop) {
     display: none;
-  }
-
-  &:active {
-    // background-color: $base-secondary;
   }
 }
 
@@ -69,18 +79,4 @@
 
 .burger--active .burger__span {
   transform: translate(-100%, -50%);
-}
-
-// Класс для состояния disabled
-.burger--disabled {
-  cursor: default;
-
-  &::before,
-  &::after {
-    // background-color: $alt-light-grey;
-  }
-}
-
-.burger--disabled .burger__span {
-  // background-color: $alt-light-grey;
 }
