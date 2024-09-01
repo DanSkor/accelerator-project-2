@@ -79,10 +79,3 @@ const appearingLabelEmail = () => {
 
 inputEmail.addEventListener('focusin', hidingLabelEmail);
 inputEmail.addEventListener('focusout', appearingLabelEmail);
-
-// if (document.activeElement !== inputPhone && inputPhone.value.length === 0) {
-//   labelPhone.style.color = 'rgba(45, 56, 63, 0.5)';
-// }
-
-// inputPhone.addEventListener('input', hidingLabelPhone);
-// inputEmail.addEventListener('input', hidingLabelEmail);

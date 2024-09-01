@@ -3,10 +3,10 @@ import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 
 const initAdvSlider = () => {
-  // const advSlider = document.querySelector('[data-slider="adv-slider"]');
-  // if (!advSlider) {
-  //   return;
-  // }
+  const advSlider = document.querySelector('[data-slider="adv-slider"]');
+  if (!advSlider) {
+    return;
+  }
 
   if (window.innerWidth >= 1440) {
     const swiper = new Swiper('.adv__slider', {

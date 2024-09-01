@@ -11,7 +11,7 @@
     color: $white-50;
   }
 
-  &:focus {
+  &:focus-visible {
     color: $primary;
     outline: none;
   }
@@ -23,7 +23,7 @@
   &--disabled,
   &--disabled:hover,
   &--disabled:active,
-  &--disabled:focus {
+  &--disabled:focus-visible {
     outline: none;
     color: $disabled;
     cursor: default;

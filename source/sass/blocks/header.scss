@@ -55,11 +55,15 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 115px 15px 50px;
+  padding: 115px 15px 45px;
   background-color: $additional-100;
   z-index: 5;
   transform: translateX(-100%);
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    padding: 115px 15px 63px;
+  }
 
   @media (min-width: $desctop) {
     position: relative;
@@ -79,9 +83,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
   @media (min-width: $desctop) {
     font-weight: 400;
-    font-size: 16px;
     line-height: 100%;
     text-transform: none;
     letter-spacing: 0.6px;
@@ -90,16 +97,19 @@
 
 .header__nav .nav__list {
   flex-direction: column;
-  gap: 22px;
+  gap: 10px;
+  margin: -6px 0 0 -8px;
 
   @media (min-width: $tablet) {
-    gap: 26px;
+    gap: 14px;
+    margin: -8px 0 0 21px;
   }
 
   @media (min-width: $desctop) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 27px;
+    margin: 0;
   }
 }
 

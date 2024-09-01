@@ -25,7 +25,7 @@
     border: 1px solid $primary;
   }
 
-  &:focus {
+  &:focus-visible {
     color: $additional-100;
     outline: none;
     border: 1px solid transparent;
@@ -43,7 +43,7 @@
 
   &--disabled,
   &--disabled:hover,
-  &--disabled:focus,
+  &--disabled:focus-visible,
   &--disabled:active {
     border: 1px solid $primary;
     background-color: $white-100;
@@ -53,7 +53,7 @@
 
   &--disabled svg path,
   &--disabled:hover svg path,
-  &--disabled:focus svg path,
+  &--disabled:focus-visible svg path,
   &--disabled:active svg path {
     fill: $primary;
   }

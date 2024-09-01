@@ -20,7 +20,7 @@
     color: $active;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: $white-100;
     outline: 1px solid $white-100;
     color: $active;
@@ -35,7 +35,7 @@
   &--disabled,
   &--disabled:hover,
   &--disabled:active,
-  &--disabled:focus,
+  &--disabled:focus-visible,
   &:disabled {
     background-color: $disabled;
     outline: 1px solid $disabled;

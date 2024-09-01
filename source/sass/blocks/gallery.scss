@@ -109,7 +109,7 @@
   }
 }
 
-.gallery__item:nth-of-type(3) .gallery__image {
+.gallery__image--big {
   @media (min-width: $tablet) {
     height: 419px;
     width: 252px;

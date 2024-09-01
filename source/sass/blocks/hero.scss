@@ -91,9 +91,7 @@
   margin: 0 0 15px;
 
   @media (min-width: $tablet) {
-    font-weight: 800;
     font-size: 56px;
-    line-height: 100%;
   }
 
   @media (min-width: $desctop) {
@@ -171,7 +169,7 @@
     background-color: #d9d9d9;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: transparent;
     outline: 1px solid $white-50;
     outline-offset: 2px;
@@ -188,7 +186,7 @@
 
   &--current,
   &--current:hover,
-  &--current:focus,
+  &--current:focus-visible,
   &--current:active {
     background-color: $white-100;
     outline: none;

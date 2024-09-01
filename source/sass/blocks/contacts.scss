@@ -104,7 +104,7 @@
     opacity: 0.6;
   }
 
-  &:focus {
+  &:focus-visible {
     color: $additional-100;
     outline: none;
   }
@@ -117,7 +117,7 @@
   &--disabled,
   &--disabled:hover,
   &--disabled:active,
-  &--disabled:focus {
+  &--disabled:focus-visible {
     outline: none;
     color: $disabled;
     cursor: default;

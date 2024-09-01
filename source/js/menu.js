@@ -7,6 +7,12 @@ for (const menuItem of menuItems) {
   menuItem.setAttribute('tabindex', '-1');
 }
 
+if (window.innerWidth >= 1440) {
+  for (const menuItem of menuItems) {
+    menuItem.setAttribute('tabindex', '0');
+  }
+}
+
 menuButton.addEventListener('click', ()=> {
   menuButton.classList.toggle('burger--active');
   menu.classList.toggle('header__nav--open');
