@@ -1,9 +1,10 @@
 .social {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
   padding: 0;
   list-style: none;
+  transform: translateX(-2px);
 
   @media (min-width: $desctop) {
     gap: 14px;
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33px;
+  width: 32px;
   height: 30px;
   border: 1px solid rgba(45, 56, 63, 0.3);
   transition: all 0.2s ease;

@@ -57,11 +57,11 @@
   &::after {
     position: absolute;
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 9px;
+    height: 12px;
     background-image: url("/__spritemap#sprite-icon-pin-view");
     top: 50%;
-    left: 12px;
+    left: 16px;
     transform: translateY(-50%);
   }
 

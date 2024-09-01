@@ -52,6 +52,12 @@
   }
 }
 
+.contacts__item--email .contacts__title {
+  @media (min-width: $tablet) {
+    transform: translateX(1px);
+  }
+}
+
 .contacts__item--tel::after {
   background-image: url("/__spritemap#sprite-icon-phone-view");
 }

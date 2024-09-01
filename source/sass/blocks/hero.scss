@@ -27,7 +27,7 @@
   min-width: 320px;
   position: relative;
   text-align: center;
-  padding: 40px 15px 56px;
+  padding: 145px 15px 56px;
 
   @media (min-width: $tablet) {
     min-height: 1034px;
@@ -138,7 +138,7 @@
 
 .hero__pagination-list {
   position: absolute;
-  bottom: 37px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

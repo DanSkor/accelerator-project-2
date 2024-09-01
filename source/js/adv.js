@@ -3,10 +3,10 @@ import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 
 const initAdvSlider = () => {
-  const advSlider = document.querySelector('[data-slider="adv-slider"]');
-  if (!advSlider) {
-    return;
-  }
+  // const advSlider = document.querySelector('[data-slider="adv-slider"]');
+  // if (!advSlider) {
+  //   return;
+  // }
 
   if (window.innerWidth >= 1440) {
     const swiper = new Swiper('.adv__slider', {
@@ -33,9 +33,12 @@ const initAdvSlider = () => {
 initAdvSlider();
 
 const items = document.querySelector('.adv').querySelectorAll('.swiper-slide');
-
 const list = document.querySelector('.adv').querySelector('.swiper-wrapper');
-list.style.transform = 'translate3d(0px, 0px, 0px)';
+
+if (window.innerWidth >= 1440) {
+  list.style.width = '4100px';
+  list.style.transform = 'translate3d(-1110px, 0px, 0px)';
+}
 
 for (const item of items) {
   item.style.display = 'grid';

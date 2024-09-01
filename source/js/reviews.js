@@ -55,6 +55,7 @@ const initReviewsSlider = () => {
   for (const item of items) {
     item.style.display = 'grid';
     if (window.innerWidth >= 1440) {
+      document.querySelector('.reviews').querySelector('.swiper').style.marginLeft = '10px';
       item.style.width = '700px';
     } else if (window.innerWidth < 1440 && window.innerWidth >= 768) {
       item.style.width = '565px';

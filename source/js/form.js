@@ -53,26 +53,36 @@ form.addEventListener('submit', (evt)=> {
 });
 
 const hidingLabelPhone = () => {
+  labelPhone.style.color = 'transparent';
+};
+
+const appearingLabelPhone = () => {
   const value = inputPhone.value;
-  if (value.length !== 0) {
-    labelPhone.style.color = 'transparent';
-  } else {
+  if (value.length === 0) {
     labelPhone.style.color = 'rgba(45, 56, 63, 0.5)';
   }
 };
 
+inputPhone.addEventListener('focusin', hidingLabelPhone);
+inputPhone.addEventListener('focusout', appearingLabelPhone);
+
 const hidingLabelEmail = () => {
+  labelEmail.style.color = 'transparent';
+};
+
+const appearingLabelEmail = () => {
   const value = inputEmail.value;
-  if (value.length !== 0) {
-    labelEmail.style.color = 'transparent';
-  } else {
+  if (value.length === 0) {
     labelEmail.style.color = 'rgba(45, 56, 63, 0.5)';
   }
 };
+
+inputEmail.addEventListener('focusin', hidingLabelEmail);
+inputEmail.addEventListener('focusout', appearingLabelEmail);
 
 // if (document.activeElement !== inputPhone && inputPhone.value.length === 0) {
 //   labelPhone.style.color = 'rgba(45, 56, 63, 0.5)';
 // }
 
-inputPhone.addEventListener('input', hidingLabelPhone);
-inputEmail.addEventListener('input', hidingLabelEmail);
+// inputPhone.addEventListener('input', hidingLabelPhone);
+// inputEmail.addEventListener('input', hidingLabelEmail);

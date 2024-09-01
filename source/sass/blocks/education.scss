@@ -1,19 +1,19 @@
 .education__wrapper {
   margin: 0 auto;
-  padding: 36px 15px 27px;
+  padding: 36px 15px 28px;
 
   @media (min-width: $tablet) {
     padding: 60px 45px 28px;
   }
 
   @media (min-width: $desctop) {
-    padding: 59px 120px 60px;
+    padding: 62px 120px 60px;
     max-width: 1440px;
   }
 }
 
 .education__title {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet) {
     margin-bottom: 33px;

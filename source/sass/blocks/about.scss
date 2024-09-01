@@ -28,7 +28,7 @@
         url("../../img/about-desc@1x.png") type("image/png") 1x,
         url("../../img/about-desc@2x.png") type("image/png") 2x
       );
-    background-position: left 103px;
+    background-position: left 101px;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $desctop) {
-    padding: 148px 120px 178px 660px;
+    padding: 147px 120px 178px 660px;
     max-width: 1440px;
   }
 }
@@ -51,12 +51,12 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 100%;
-  margin: 0 0 42px;
+  margin: 0 0 43px;
 
   &::after {
     position: absolute;
     content: attr(data-title);
-    top: -16px;
+    top: -12px;
     left: 0;
     font-weight: 800;
     font-size: 26px;
@@ -89,7 +89,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
-  margin: 0 0 15px;
+  margin: 0 0 14px;
 
   @media (min-width: $tablet) {
     font-size: 18px;

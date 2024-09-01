@@ -1,6 +1,6 @@
 .gallery__wrapper {
   margin: 0 auto;
-  padding: 35px 0 3px;
+  padding: 36px 0 3px;
   overflow: hidden;
 
   @media (min-width: $tablet) {
@@ -18,6 +18,10 @@
 
 .gallery__title {
   margin: 0 15px 27px;
+
+  &::after {
+    top: -13px;
+  }
 
   @media (min-width: $tablet) {
     margin: 0 45px 30px;
@@ -68,6 +72,11 @@
 
   @media (min-width: $tablet) {
     grid-column: 1/3;
+    gap: 2px;
+  }
+
+  @media (min-width: $desctop) {
+    gap: 5px;
   }
 }
 
@@ -79,7 +88,7 @@
   &--two {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 6px;
   }
 
   @media (min-width: $tablet) {
@@ -100,13 +109,25 @@
   }
 }
 
+.gallery__item:nth-of-type(3) .gallery__image {
+  @media (min-width: $tablet) {
+    height: 419px;
+    width: 252px;
+  }
+
+  @media (min-width: $desctop) {
+    height: 463px;
+    width: 284px;
+  }
+}
+
 .gallery__image {
   display: block;
   object-fit: cover;
   height: 266px;
 
   &--little {
-    height: 134px;
+    height: 135px;
   }
 
   &--little-bottom {
